@@ -1,0 +1,7 @@
+<!--pages/chooseWay/chooseWay.wxml-->
+<view class = 'container'>
+<image class = 'image' mode = "aspectFit" src="/images/text1.JPG"></image>
+<button class = 'button' type = "default" plain="true">手动添加</button>
+<image class = 'image' mode = "aspectFit" src="/images/text1.JPG"></image>
+<button class = 'button' type = "default" plain="true">图片识别</button>
+</view>

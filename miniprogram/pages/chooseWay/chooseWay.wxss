@@ -1,0 +1,31 @@
+/* pages/chooseWay/chooseWay.wxss */
+.info{
+  font-size: 30px;
+  font-weight: blod;
+}
+
+.container{
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  height: 500rpx;
+  width: 500rpx;
+  /* border-radius: 50%; */
+  overflow:hidden;
+}
+
+.button{
+  margin-bottom: 50rpx;
+  font-size: 30rpx;
+  border-radius: 15rpx;
+} 
+
+

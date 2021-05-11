@@ -1,0 +1,22 @@
+<!--pages/chooseWay/infoInsert.wxml-->
+<block class="product-item" wx:for="{{lists}}" wx:key="index">
+<movable-area class="movablearea">
+  <movable-view out-of-bounds="true" direction="horizontal" x="{{item.xmove}}"
+          inertia="true"
+          data-productIndex="{{index}}"
+          bindtouchstart="handleTouchStart"
+          bindtouchend="handleTouchEnd"
+          bindchange="handleMovableChange"
+          class="movableview">  
+      <input class='create-li' data-id="index" placeholder="请输入菜品和金额"  bindinput='bindKeyInput'></input>
+  </movable-view>
+</movable-area>
+<view class="delete-btn" bindtap="handleDeleteProduct">删除</view>
+</block> 
+    <button class='add-li' bindtap='addList' type = "default" plain="true">添加</button>
+    <button class='add-li' bindtap='delList' type = "default" plain="true">删除</button>
+
+<!--圆形跳转页面按钮-->
+<view class="round-click">
+   <navigator url='../discontInsert/discontInsert?title=navigate' hover-class="navigator-hover">下一页</navigator >
+</view>
